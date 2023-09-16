@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tobe/modules/auth/auth_controller.dart';
+import 'package:tobe/controllers/auth_controller.dart';
 import 'package:tobe/utils/components.dart';
 
 import '../../utils/colors.dart';

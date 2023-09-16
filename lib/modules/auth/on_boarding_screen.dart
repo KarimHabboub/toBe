@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:tobe/modules/auth/auth_controller.dart';
+import 'package:tobe/controllers/auth_controller.dart';
 import 'package:tobe/utils/styles.dart';
 
 import '../../utils/colors.dart';
@@ -22,7 +22,7 @@ class BoardingModel {
 class OnBoardingScreen extends StatelessWidget {
   OnBoardingScreen({super.key});
 
-  final boardController = PageController();
+  final PageController boardController = PageController();
   final AuthController controller = Get.find();
 
   @override

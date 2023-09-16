@@ -5,7 +5,7 @@ import '../../utils/components.dart';
 import '../../utils/styles.dart';
 import '../../widget/my_app_bar.dart';
 import '../../widget/my_title.dart';
-import 'auth_controller.dart';
+import '../../controllers/auth_controller.dart';
 
 class VerifyScreen extends StatelessWidget {
   VerifyScreen({Key? key}) : super(key: key);

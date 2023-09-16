@@ -5,7 +5,7 @@ import 'package:tobe/utils/components.dart';
 import 'package:tobe/widget/my_container_icon.dart';
 import '../../utils/colors.dart';
 import '../../utils/styles.dart';
-import 'auth_controller.dart';
+import '../../controllers/auth_controller.dart';
 
 class ChooseTopic extends StatelessWidget {
   ChooseTopic({Key? key}) : super(key: key);

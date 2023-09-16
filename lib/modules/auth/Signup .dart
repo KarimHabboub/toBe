@@ -5,7 +5,7 @@ import '../../utils/colors.dart';
 import '../../utils/components.dart';
 import '../../widget/authentication_methods.dart';
 import '../../widget/my_title.dart';
-import 'auth_controller.dart';
+import '../../controllers/auth_controller.dart';
 
 class SignUp extends StatelessWidget {
   SignUp({Key? key}) : super(key: key);

@@ -173,3 +173,23 @@ class MyTextFormField extends StatelessWidget {
   }
 }
 
+void showSnackBar(String message , context) {
+  ScaffoldMessenger.of(context).showSnackBar(
+    SnackBar(
+      content: Text(
+        message,
+        textAlign: TextAlign.center,
+        style: const TextStyle(
+          fontWeight: FontWeight.w300,
+          fontSize: 16.0,
+        ),
+      ),
+      backgroundColor: Colors.blueAccent,
+      behavior: SnackBarBehavior.floating,
+      elevation: 1.0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(50.0),
+      ),
+    ),
+  );
+}

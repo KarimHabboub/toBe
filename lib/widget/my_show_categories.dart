@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../modules/auth/auth_controller.dart';
+import '../controllers/auth_controller.dart';
 
 class MyShowCategories extends StatelessWidget {
   const MyShowCategories({

@@ -11,7 +11,7 @@ import 'modules/auth/new_password.dart';
 import 'modules/auth/reset_password.dart';
 import 'modules/auth/verify_screen.dart';
 import 'modules/bottom_nav_bar_screens/explore.dart';
-import 'modules/subpages/course_detail.dart';
+import 'modules/subpages/course_detail/course_detail.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/newPassword' , page: ()=>  NewPassword()),
         GetPage(name: '/chooseTopic' , page: ()=>  ChooseTopic()),
         GetPage(name: '/explore' , page: ()=>   Explore()),
-        GetPage(name: '/courseDetail' , page: ()=>   MyHomePage()),
+        GetPage(name: '/courseDetail' , page: ()=>   CourseDetail()),
       ],
     );
   }

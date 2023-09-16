@@ -8,7 +8,7 @@ import '../../widget/my_course_listView.dart';
 import '../../widget/my_show_categories.dart';
 import '../../widget/my_subtitle.dart';
 import '../../widget/my_title.dart';
-import '../auth/auth_controller.dart';
+import '../../controllers/auth_controller.dart';
 
 class Explore extends StatelessWidget {
   Explore({Key? key}) : super(key: key);

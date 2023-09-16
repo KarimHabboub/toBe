@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_emoji/flutter_emoji.dart';
 import 'package:get/get.dart';
 
-import 'on_boarding_screen.dart';
+import '../modules/auth/on_boarding_screen.dart';
 
 class AuthController extends GetxController{
 

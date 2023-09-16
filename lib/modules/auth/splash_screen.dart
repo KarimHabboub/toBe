@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:tobe/modules/auth/auth_controller.dart';
+import 'package:tobe/controllers/auth_controller.dart';
 
 
 class SplashScreen extends StatefulWidget {
