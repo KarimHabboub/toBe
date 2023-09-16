@@ -7,7 +7,6 @@ import '../../utils/components.dart';
 import '../../utils/styles.dart';
 import '../../widget/authentication_methods.dart';
 import '../../widget/my_title.dart';
-import '../../widget/my_container_icon.dart';
 
 class Login extends StatelessWidget {
   Login({Key? key}) : super(key: key);
@@ -18,7 +17,6 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var height = MediaQuery.of(context).size.height * .0122;
     return Scaffold(
       backgroundColor: myBackgroundColor,
       body: SingleChildScrollView(
@@ -56,7 +54,9 @@ class Login extends StatelessWidget {
                         colorIcon: cont.loginIsSelected1.value
                             ? myTealColor
                             : myLightTealColor,
-                        validator: (value) {},
+                        validator: (value) {
+                          return null;
+                        },
                       ),
                     ),
                     const SizedBox(height: 15),
@@ -79,7 +79,7 @@ class Login extends StatelessWidget {
                         colorIcon: cont.loginIsSelected2.value
                             ? myTealColor
                             : myLightTealColor,
-                        validator: (value) {},
+                        validator: (value) {return null;},
                       ),
                     ),
                     const SizedBox(height: 30),

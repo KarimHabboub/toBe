@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:tobe/controllers/home_controller.dart';
-
 import '../../../../utils/colors.dart';
 import '../../../../utils/styles.dart';
 import '../../../../widget/my_container_icon.dart';

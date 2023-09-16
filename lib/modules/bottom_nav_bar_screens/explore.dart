@@ -70,7 +70,7 @@ class Explore extends StatelessWidget {
                         keyboardType: TextInputType.text,
                         prefix: Icons.search,
                         hintText: 'Search for anything',
-                        validator: (value) {},
+                        validator: (value) {return null;},
                       ),
                     ],
                   ),

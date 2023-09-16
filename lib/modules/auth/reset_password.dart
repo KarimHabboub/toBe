@@ -44,7 +44,7 @@ class ResetPassword extends StatelessWidget {
              colorIcon: cont.resetPasswordIsSelected.value
                  ? myTealColor
                  : myLightTealColor,
-             validator: (value) {},
+             validator: (value) {return null;},
            ),),
             const SizedBox(height: 30),
             GetX<AuthController>(builder: (cont) =>  MyButton(

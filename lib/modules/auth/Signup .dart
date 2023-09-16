@@ -51,7 +51,7 @@ class SignUp extends StatelessWidget {
                       colorIcon: cont.signupIsSelected1.value
                           ? myTealColor
                           : myLightTealColor,
-                      validator: (value) {},
+                      validator: (value) {return null;},
                     ),),
                     const SizedBox(height: 15),
                     GetX<AuthController>(builder: (cont)=> MyTextFormField(
@@ -69,12 +69,12 @@ class SignUp extends StatelessWidget {
                       },
                       onChange: (v) {
                         cont.signupChangIsSelected2(text: v);
-                        print(' 22222  ${cont.signupIsSelected2.value}');
+
                       },
                       colorIcon: cont.signupIsSelected2.value
                           ? myTealColor
                           : myLightTealColor,
-                      validator: (value) {},
+                      validator: (value) {return null;},
                     ),),
                     const SizedBox(height: 30),
                     GetX<AuthController>(builder: (cont) => MyButton(

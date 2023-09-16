@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../utils/colors.dart';
 import '../../utils/components.dart';
-import '../../utils/styles.dart';
 import '../../widget/my_app_bar.dart';
 import '../../widget/my_title.dart';
 import '../../controllers/auth_controller.dart';
@@ -62,7 +61,9 @@ class NewPassword extends StatelessWidget {
                             colorIcon: cont.newPasswordIsSelected.value
                                 ? myTealColor
                                 : myLightTealColor,
-                            validator: (value) {},
+                            validator: (value) {
+                              return null;
+                            },
                           ),
                         ),
                         const SizedBox(height: 39),
