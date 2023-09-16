@@ -12,7 +12,6 @@ import 'package:tobe/widget/my_toggle_container.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import '../../../utils/components.dart';
 import '../../../widget/my_enroll_course_now.dart';
-import 'package:expandable_page_view/expandable_page_view.dart';
 
 class CourseDetail extends StatefulWidget {
   const CourseDetail({super.key});
@@ -133,25 +132,17 @@ class _CourseDetailState extends State<CourseDetail> {
                 child: SingleChildScrollView(
                   child: Padding(
                     padding: const EdgeInsets.all(20.0),
-                    child: Column(
+                    child: GetX<HomeController>(builder: (cont)=>Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const CourseDetailPart1(),
                         MyToggleContainer(controller: homeController),
-                        GetX<HomeController>(
-                          builder: (cont) => ExpandablePageView(
-                            controller: homeController.pageController.value,
-                            physics: const NeverScrollableScrollPhysics(),
-                            children: [
-                              if (cont.indexPageView.value == 0)
-                                const MyCurriculumPage(),
-                              if (cont.indexPageView.value == 1)
-                                const MyReviewPage(),
-                            ],
-                          ),
-                        )
+                        if (cont.indexPageView.value == 0)
+                          const MyCurriculumPage(),
+                        if (cont.indexPageView.value == 1)
+                          const MyReviewPage()
                       ],
-                    ),
+                    ),),
                   ),
                 ),
               ),
@@ -163,4 +154,3 @@ class _CourseDetailState extends State<CourseDetail> {
     );
   }
 }
-
