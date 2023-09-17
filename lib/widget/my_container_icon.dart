@@ -4,22 +4,21 @@ import 'package:tobe/utils/colors.dart';
 class MyContainerIcon extends StatelessWidget {
   const MyContainerIcon({
     Key? key,
-    this.icon,
+    this.child,
     this.width = 60,
-    this.stringIcon,
     this.height = 60,
     this.backgroundColor = Colors.white,
     this.isSelected = false,
-    this.stringIconStyle,
+
 
   }) : super(key: key);
-  final Widget? icon;
+  final Widget? child;
   final Color? backgroundColor;
   final bool isSelected;
   final double? width;
   final double? height;
-  final String? stringIcon;
-  final TextStyle? stringIconStyle;
+
+
 
 
   @override
@@ -40,13 +39,7 @@ class MyContainerIcon extends StatelessWidget {
                   border: Border.all(color: isSelected ? myTealColor : Colors.transparent, width: 2)),
               child: Padding(
                 padding: const EdgeInsets.all(6.0),
-                child: icon != null
-                    ? Center(child: icon)
-                    : Center(
-                        child: Text(
-                        "$stringIcon",
-                        style:stringIconStyle?? const TextStyle(fontSize: 30),
-                      )),
+                child: Center(child: child)
               ),
             ),
           ),

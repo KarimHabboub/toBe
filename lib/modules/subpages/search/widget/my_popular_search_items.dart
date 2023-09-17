@@ -1,34 +1,36 @@
 import 'package:flutter/material.dart';
+import '../../../../controllers/home_controller.dart';
+import '../../../../widget/my_intrinsic_container.dart';
 
-import '../controllers/auth_controller.dart';
-
-class MyShowCategories extends StatelessWidget {
-  const MyShowCategories({
+class MyPopularSearchItems extends StatelessWidget {
+  const MyPopularSearchItems({
     super.key,
-    required this.cont, required this.length,
+    required this.homeController,
   });
 
-  final AuthController cont;
-  final int length;
-
+  final HomeController homeController;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         for (int index = 0;
-            index < length;
-            index += (length / 2).round())
+        index < homeController.popularSearch.length;
+        index += (homeController.popularSearch.length / 2).round())
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
+            physics: const BouncingScrollPhysics(),
             child: IntrinsicWidth(
               child: Wrap(
                 direction: Axis.horizontal,
                 children: [
                   for (int i = index;
-                      i < index + (length / 2).round() &&
-                          i < length;
-                      i++)
+                  i <
+                      index +
+                          (homeController.popularSearch.length / 2)
+                              .round() &&
+                      i < homeController.popularSearch.length;
+                  i++)
                     Padding(
                       padding: const EdgeInsets.only(right: 8.0, bottom: 8),
                       child: Container(
@@ -39,10 +41,8 @@ class MyShowCategories extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
                               vertical: 10.0, horizontal: 20),
-                          child: Text(
-                            "${cont.myEmoji[i].code}  ${cont.myEmoji[i].name}",
-                            maxLines: 1,
-                          ),
+                          child: MyIntrinsicContainer(
+                              text: homeController.popularSearch[i]),
                         ),
                       ),
                     ),

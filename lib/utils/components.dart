@@ -49,23 +49,21 @@ class MyButton extends StatelessWidget {
 class MyOutlinedButton extends StatelessWidget {
   const MyOutlinedButton({
     super.key,
-    required this.text,
+    this.text,
     required this.onPressed,
     required this.color,
     this.height,
     this.width,
-    this.textStyle,
+    this.textStyle,  this.child,
   });
 
   final double? width;
-
   final double? height;
-
   final Color color;
-
-  final String text;
+  final String? text;
   final TextStyle? textStyle;
   final Function onPressed;
+  final Widget? child;
 
   @override
   Widget build(BuildContext context) {
@@ -79,8 +77,8 @@ class MyOutlinedButton extends StatelessWidget {
         onPressed: () {
           onPressed();
         },
-        child: Text(
-          text,
+        child: text == null ?child :Text(
+          text!,
           style: textStyle ?? Styles.textStyle16.copyWith(color: myTealColor),
         ),
       ),

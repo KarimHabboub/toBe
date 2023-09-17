@@ -142,9 +142,9 @@ class MyTopicItem extends StatelessWidget {
           },
           child: MyContainerIcon(
             isSelected: isSelected,
-            stringIcon: emoji.code,
             height: 70,
             width: 80,
+            child: Text(emoji.code),
           ),
         ),
         const SizedBox(height: 10),

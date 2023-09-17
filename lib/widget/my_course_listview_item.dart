@@ -41,13 +41,13 @@ class MyCourseListViewItem extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     MyContainerIcon(
-                      icon: Text('⭐ 4.8'),
+                      child: Text('⭐ 4.8'),
                       height: 50,
                       width: 80,
                     ),
                     Spacer(),
                     MyContainerIcon(
-                      icon: Text(
+                      child: Text(
                         '❤',
                         style: TextStyle(),
                       ),

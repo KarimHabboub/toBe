@@ -106,7 +106,7 @@ class MyReviewListViewItem extends StatelessWidget {
               ),
             ),
             const MyContainerIcon(
-              icon: Text('⭐ 4.8'),
+              child: Text('⭐ 4.8'),
               backgroundColor: myBackgroundColor,
               height: 50,
               width: 80,

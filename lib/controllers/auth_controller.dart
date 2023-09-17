@@ -176,7 +176,7 @@ class AuthController extends GetxController{
       gaming,
       marketing,
       music,
-      sport
+      sport,
     ];
     return _emoji;
   }

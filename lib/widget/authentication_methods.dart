@@ -26,7 +26,7 @@ class AuthenticationMethods extends StatelessWidget {
           ),
         ),
         const MyContainerIcon(
-          icon: Icon(
+          child: Icon(
             Icons.facebook,
             color: Colors.blue,
             size: 45,
@@ -34,7 +34,7 @@ class AuthenticationMethods extends StatelessWidget {
           width: 90,
         ),
         const MyContainerIcon(
-          icon: Icon(
+          child: Icon(
             Icons.apple,
             color: Colors.black,
             size: 45,

@@ -21,7 +21,7 @@ class MyAppBar extends StatelessWidget {
     return Row(
       children: [
         MyContainerIcon(
-          icon: icon,
+          child: icon,
           width: width,
         ),
         SizedBox(

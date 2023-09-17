@@ -46,7 +46,7 @@ class Explore extends StatelessWidget {
                           Spacer(),
                           MyContainerIcon(
                             backgroundColor: myDarkTealColor,
-                            icon: MyIconWithNotification(
+                            child: MyIconWithNotification(
                                 icon: Icon(
                               Icons.shopping_cart,
                               color: Colors.white,
@@ -55,7 +55,7 @@ class Explore extends StatelessWidget {
                           ),
                           MyContainerIcon(
                             backgroundColor: myDarkTealColor,
-                            icon: MyIconWithNotification(
+                            child: MyIconWithNotification(
                                 icon: Icon(
                               Icons.notifications,
                               size: 30,
@@ -97,7 +97,7 @@ class Explore extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  MyShowCategories(cont: cont),
+                  MyShowCategories(length: cont.myEmoji.length,cont: cont),
                   const SizedBox(
                     height: 25,
                   ),

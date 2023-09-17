@@ -22,7 +22,7 @@ class MyVideoPlayer extends StatelessWidget {
           child: Row(
             children: [
               MyContainerIcon(
-                icon: Icon(
+                child: Icon(
                   Icons.arrow_back_ios_new,
                   size: 20,
                   color: Colors.white,
@@ -33,7 +33,7 @@ class MyVideoPlayer extends StatelessWidget {
               ),
               Spacer(),
               MyContainerIcon(
-                icon: MyIconWithNotification(
+                child: MyIconWithNotification(
                     icon: Icon(
                       Icons.shopping_cart,
                       color: Colors.white,
