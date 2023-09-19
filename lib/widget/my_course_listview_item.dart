@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../utils/colors.dart';
 import 'my_container_icon.dart';
+import 'my_course_data.dart';
 
 class MyCourseListViewItem extends StatelessWidget {
   const MyCourseListViewItem({
@@ -35,88 +34,43 @@ class MyCourseListViewItem extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              child:  Padding(
+              child:  const Padding(
                 padding: EdgeInsets.all(8.0),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     MyContainerIcon(
-                      child: Text('⭐ 4.8'),
                       height: 50,
                       width: 80,
+                      child: Text('⭐ 4.8'),
                     ),
                     Spacer(),
                     MyContainerIcon(
+                      height: 50,
+                      width: 50,
                       child: Text(
                         '❤',
                         style: TextStyle(),
                       ),
-                      height: 50,
-                      width: 50,
                     ),
                   ],
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Text(
-              "Design Thingking Fundamental",
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Row(
-              children: [
-                Icon(
-                  Icons.person,
-                  color: myGreyColor,
-                  size: 20,
-                ),
-                Text("Robert Fox"),
-              ],
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Row(
-              children: [
-                Text(
-                  "\$150",
-                  style: TextStyle(
-                    color: myTealColor,
-                  ),
-                ),
-                Spacer(),
-                Container(
-                  height: 30,
+            const MyCourseData(
+              nameCourse: "Design Thingking Fundamental",
+              nameAuth: "Robert Fox",
+              praCourse: 150,
+              stateCourse: 'Best seller',
+            )
 
-                  decoration: BoxDecoration(
-                      color: myLightRedColor,
-                      borderRadius: BorderRadius.circular(20)),
-                  child: Center(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                      child: Text(
-                        'Best seller',
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: myRedColor,
-                        ),
-                      ),
-                    ),
-                  ),
-                )
-              ],
-            ),
           ],
         ),
       ),
     );
   }
 }
+

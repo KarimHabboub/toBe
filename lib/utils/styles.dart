@@ -7,6 +7,10 @@ abstract class Styles {
     fontSize: 12, fontWeight: FontWeight.normal,color: Colors.black);
   static const TextStyle textDarkGreyStyle12 =  TextStyle(
     fontSize: 12, fontWeight: FontWeight.normal,color: Color(0xFF66696A));
+  static const TextStyle textTealStyle12 =  TextStyle(
+    fontSize: 12, fontWeight: FontWeight.normal,color: Color(0xFF00A9B7));
+  static const TextStyle textRedStyle12 =  TextStyle(
+    fontSize: 12, fontWeight: FontWeight.normal,color: Color(0xFFFF6666));
 
   static const TextStyle textStyle14 =  TextStyle(
       fontSize: 14, fontWeight: FontWeight.normal,color: Colors.black);

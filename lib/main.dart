@@ -10,7 +10,7 @@ import 'modules/auth/loagin.dart';
 import 'modules/auth/new_password.dart';
 import 'modules/auth/reset_password.dart';
 import 'modules/auth/verify_screen.dart';
-import 'modules/bottom_nav_bar_screens/explore.dart';
+import 'modules/bottom_nav_bar_screens/explore/explore.dart';
 import 'modules/subpages/course_detail/course_detail.dart';
 import 'modules/subpages/search/search_screen.dart';
 
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
 
       ),
-      initialRoute: "/searchScreen",
+      initialRoute: "/explore",
       getPages: [
         GetPage(name: '/' , page: ()=>  SplashScreen()),
         GetPage(name: '/onBoarding' , page: ()=>  OnBoardingScreen()),

@@ -191,3 +191,18 @@ void showSnackBar(String message , context) {
     ),
   );
 }
+
+Future<void> buildShowModalBottomSheet(BuildContext context, Widget bodyBottomSheet) {
+  return showModalBottomSheet<void>(
+    context: context,
+    isScrollControlled: true,
+    shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(
+          top: Radius.circular(25.0),
+        )),
+    backgroundColor: Colors.transparent,
+    builder: (BuildContext context) {
+      return  bodyBottomSheet;
+    },
+  );
+}
